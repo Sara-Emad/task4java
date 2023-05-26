@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>اطلب عرض سعر من منصة الموقع</title>
+    <link rel="shortcut icon" type="image/png"  href="logo1.png"  >
+
+    <!-- ================================ bootstrap========================================= -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ============================ icon ================================= -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ============================== font ================================= -->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/droid-arabic-kufi" type="text/css"/>
+
+    <!-- -------------------------------------font awesome------------------------------------------- -->
+    <!-- ============================================================ -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <s src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- =================================== -->
+    <link href="https://fonts.cdnfonts.com/css/somar-sans" rel="stylesheet">
+                
+</head>
+<body>
+    <header>
+        <div class="header">
+            <nav class="nav">
+            <div class="nav-right">
+                <a href="#" class="logo"><img src="img1.png"></a>
+                
+                <ul class="nav-items">
+                    <li class="nav-item"> 
+                    <a href="#" class="nav-link">سجل كمورد</a> 
+                    <a href="#" class="nav-link">كيف يعمل؟</a> 
+                    <a href="#" class="nav-link">الباقات</a> 
+                    <a href="#" class="nav-link">المدونة</a> 
+                    <a href="#" class="nav-link"> اتصل بنا</a>
+                    <a href="#" class="nav-link"> أحدث الطلبات </a>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-left">
+                <a href="#" class="nav-linkeds"> <i class='bx bx-user'></i> <span>تسجيل الدخول</span>  </a>
+                <a href="#" class="nav-linkeds"> <i class='bx bx-collection'></i><span>لوحة التحكم</span>    </a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><img src="img-eg.png" alt=""></a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">مصر</a></li>
+                    <li><a class="dropdown-item" href="#"> المملكة العربية السعودية</a></li>
+                    </ul>
+                </li>
+                
+            </div>
+                <hr>
+            </nav>
+        </div>
+        </header>
+
+        <!-- ==================================  form-section ====================================== -->
+
+        <section class="container">
+            <div class="container-form">
+                <div class="form-outer">
+                    <div id="reqForm" class="reqForm">
+                        <div class="midform">
+                        <button class="btn1">اضغط هنا لتعرف كيف تعمل المنصة</button>
+                        <h4>طلب عرض سعر</h4>
+                        <h1>خرسانة جاهزة</h1>
+                        </div>
+                        <div class="step-row">
+                            <div class="step-col" >
+                                <h6>1</h6>
+                                معلومات المنتج
+                            </div>
+                            <div class="step-col">
+                                <h6>2</h6>
+                                المشروع
+                            </div>
+                            <div class="step-col">
+                                <h6>3</h6>
+                                ازاي نوصلك
+                            </div>
+                        </div>
+                        <!-- ========== first form ============= -->
+                        <form id="form1">
+                            <div>
+                            <p>اسم المنتج المطلوب</p>
+                            
+                            <input type="text"  placeholder="  اختر اسم المنتج المطلوب">
+                            <datalist name="ProductCategory" id="ProductCategory">
+                                <option value="خرسانة جاهزة"> </option>
+                                <option value="أسمنت معبأ"></option>
+                                <option value="أسمنت سايب"></option>
+                                <option value="حديد تسليح"></option>
+                                <option value="طوب أحمر طفلى مفرغ"></option>
+                                <option value="طوب أسمنتي مصصمت"></option>
+                                <option value="بلوك أسمنت مفرغ"></option>
+                                <option value="بلاط موزايكو"></option>
+                                <option value="بلاط انترلوك"></option>
+                                <option value="ألياف حديدية للخرسانة"></option>
+                                <option value="رمل"></option>
+                                <option value="مواد كهربائية"></option>
+                            </datalist>
+                        </div>
+                        <div>
+                        <p>الكمية <span>*</span></p>
+                        <input type="number" min="10" step="0.5" placeholder="ادخل الكمية" type="number" step="0.5" min="1"
+                        >
+                        </div>
+                        <div>
+                            <p>الوحدة  <span>*</span></p>
+                            <input type="search"  placeholder=" م3" name="unitlist" id="unitlist" list="unit">
+                            <datalist id="unit" name="unit">
+                                <option value="طن"></option>
+                                <option value="م3">م3</option>
+                                <option value="طوبة"></option>
+                                <option value="بلوك"></option>
+                                <option value="عدد"></option>
+                                <option value="م2"></option>
+                                <option value="مم"></option>
+                                <option value="سم"></option>
+                                <option value="م"></option>
+                                <option value="كجم">كجم</option>
+                            </datalist>
+                            </div>
+                            <div style="display: grid;">
+                                <p> تفاصيل أخرى خاصة بالطلب
+                                </p>
+                                <textarea name="note" id="note" cols="30" rows="10" placeholder="تفاصيل أخرى مثل المواصفات والمقاسات والاعتمادات المطلوبة"></textarea>
+                            </div>
+                            <div style="display: grid;">
+                                <p>نوع العنصر <span>*</span> </p>
+                                <select type="text" placeholder="اسقف"  id="rf" >
+                                    <option >أسقف</option>
+                                    <option value="أعمدة">أعمدة</option>
+                                    <option value="قواعد مسلحة و سملات ">قواعد مسلحة و سملات</option>
+                                    <option value="لبشة مسلحة ">لبشة مسلحة</option>
+                                    <option value="لبشة عادية ">لبشة عادية </option>
+                                    <option value="حوائط مسلحة">حوائط مسلحة </option>
+                                    <option value=" أرضية عادية ">أرضيةعادية</option>
+                                    <option value=" أخرى">أخري</option>
+                                </select>
+                            </div>
+                            <div style="display: grid;">
+                                <p> الإجهاد المطلوب كجم/سم2 <span>*</span> </p>
+                                <select type="text" placeholder="250"  id="rf" >
+                                    <option >350</option>
+                                    <option >400</option>
+                                    <option > 450 </option>
+                                    <option >500 </option>
+                                </select>
+                            </div>
+                            <div style="display: grid;">
+                                <p> المحتوى الأسمنتى كجم/م3 <span>*</span> </p>
+                                <select type="text" placeholder="350"  id="rf" >
+                                    <option >150</option>
+                                    <option >180</option>
+                                    <option > 200 </option>
+                                    <option >250 </option>
+                                    <option > 300 </option>
+                                </select>
+                            </div>
+                            <div style="display: grid;">
+                                <p> نوع الأسمنت <span>*</span> </p>
+                                <select type="text" placeholder="عادي"  id="rf" >
+                                    <option >عادي</option>
+                                    <option >مقاوم</option>
+                                </select>
+                            </div>
+                            <div style="display: grid;">
+                                <p>طول ذراع المضخة بالمتر <span>*</span> </p>
+                                <select type="text" placeholder="36"  id="rf" required="true">
+                                    <option >36</option>
+                                    <option >42</option>
+                                    <option > 47 </option>
+                                    <option >49 </option>
+                                    <option > 52 </option>
+                                </select>
+                            </div>
+                            <div class="btn-box">
+                                <button type="button" id="next1">التالي</button>
+                            </div>
+                        </form>
+                        <!-- ================= second tab============================== -->
+                        <form id="form2">
+                            <div>
+                            <p>مكان المشروع<span >*</span></p>
+                            <select style="width: 100%;" id="Place" name="Place"  required data-select2-id="Place" tabindex="-1" aria-hidden="true">
+                                <option value="44" data-select2-id="235">القاهرة الجديدة - التجمع - القاهرة</option>
+                                <option value="86" data-select2-id="236">6 أكتوبر - الجيزة</option>
+                                <option value="39" data-select2-id="237">العاصمة الإدارية الجديدة - القاهرة</option>
+                                <option value="79" data-select2-id="238">مدينة بدر - القاهرة</option>
+                            </select>
+                            </div>
+                            <!-- ===== form group======= -->
+                            <div>
+                                <p>عنوان المشروع<span >*</span></p>
+                                <input id="SiteAddress"  name="SiteAddress" placeholder="ادخل عنوان المشروع" type="text"
+                                required>
+                            </div>
+                            <!-- ==================== -->
+                            <div>
+                                <p>مرحلة المشروع<span >*</span></p>
+                                <select style="width: 100%;" id="SiteStatus" name="SiteStatus"
+                                    placeholder="اختر مرحلة المشروع" type="text" required>
+                                    <option selected="selected" value="تنفيذ">مرحلة التنفيذ</option>
+                                    <option value="مناقصة">مرحلة تقديم المناقصات</option>
+                                </select>
+                            </div>
+                            <div>
+                                <p>عايز تنفذ الطلبية امتى؟<span >*</span></p>
+                                <input type="date" required
+                                    min="2023-05-24">
+                            </div>
+                            <div class="btn-box">
+                                <button type="button" id="back1">السابق</button>
+                                <button type="button" id="next2">التالي</button>
+                            </div>
+                        </form>
+                        <!-- ============== 3th tab===================== -->
+                        <form id="form3">
+                            <div >
+                                <p>اسم شركتك ايه؟<span >*</span></p>
+                                <input  placeholder="اسم شركتك ايه؟"
+                                    type="text" required>
+                            </div>
+            
+                            <!-- form-group -->
+                            <div >
+                                <p>اسم الشخص المفوض ثنائي<span >*</span></p>
+                                <input   placeholder="اسم الشخص المفوض ثنائي" type="text"
+                                    required>
+                            </div>
+            
+                            <!-- form-group -->
+                            <div >
+                                <p>رقم الموبايل المسجل عالواتساب<span >*</span></p>
+                                <input id="Phone" data-parsley-mobile-eg="true"
+                                    placeholder=" مثال: 01012345678 " type="tel" required>
+                            </div>
+            
+                            <!-- form-group -->
+                            <div >
+                                <p>ايميلك</p>
+                                <input id="email"  placeholder="مثال: mohamed@exmple.com"  action="/action_page.php" onsubmit="return validateForm()" method="post" type="email"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                            </div>
+                            <div class="btn-box">
+                                <button type="button" id="back2">السابق</button>
+                                <button type="submit" id="next3">اطلب</button>
+                            </div>
+                        
+                        </form>
+                    
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        
+        <script>
+                var form1 = document.getElementById("form1");
+                var form2 = document.getElementById("form2");
+                var form3 = document.getElementById("form3");
+
+                var next1 = document.getElementById("next1");
+                var next2 = document.getElementById("next2");
+                var back1 = document.getElementById("back1");
+                var back2 = document.getElementById("back2");
+
+                next1.onclick = function(){
+                    form1.style.left = "-800px"
+                    form2.style.left = "5px"
+                }
+
+                back1.onclick = function(){
+                    form1.style.left = "5px"
+                    form2.style.left = "800px"
+                }
+
+                next2.onclick = function(){
+                    form2.style.left = "-800px"
+                    form3.style.left = "5px"
+                }
+
+                back2.onclick = function(){
+                    form2.style.left = "5px"
+                    form3.style.left = "800px"
+                }
+
+                // ======== validation email ===================
+                function validateForm() {
+                let x = document.forms["form3"]["email"].value;
+                if (x == "") {
+                alert("Name must be filled out");
+                return false;
+                }
+            }
+
+        </script>
+        <script src="main.js"></script>
+    </body>
+    </html>
